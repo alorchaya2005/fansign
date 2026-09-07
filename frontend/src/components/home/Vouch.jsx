@@ -11,7 +11,7 @@ function Vouch() {
   useEffect(() => {
     async function getVouces() {
       const res = await axios.get("https://myvouch.es/api/vouches/sign");
-      const data = await res.data;
+      const data = await res.data.data;
       setVouch(data);
       console.log(data);
       return data;
