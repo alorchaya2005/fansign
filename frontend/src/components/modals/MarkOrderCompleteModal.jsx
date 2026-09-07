@@ -1,0 +1,57 @@
+import { Loader, MessageCircleWarning, X } from "lucide-react";
+
+import toast from "react-hot-toast";
+import { useAdminStore } from "../../store/useAdminStore";
+
+function MarkOrderCompleteModal({ orderId }) {
+  const { markOrder, isMarkingOrderComplete } = useAdminStore();
+
+  const handleComplete = async () => {
+    await markOrder(orderId);
+    document.getElementById(`mark_${orderId}`).close();
+  };
+
+  return (
+    <dialog id={`mark_${orderId}`} className="modal">
+      <div className="modal-box bg-gry max-w-md">
+        <form method="dialog">
+          <button className=" p-1 rounded-full hover:bg-subGry absolute top-2 right-2">
+            <X className=" size-4" />
+          </button>
+        </form>
+        <div className=" flex flex-col items-center ">
+          <MessageCircleWarning className=" size-10 text-red-500" />
+          <h3 className="font-bold text-lg mt-5">Are you sure?</h3>
+          <p className=" text-zinc-300">
+            You want to mark this order as completed
+          </p>
+          <div className=" mt-3 w-full flex items-center gap-2">
+            <button
+              onClick={handleComplete}
+              className=" w-full h-7 text-sm bg-green-600 rounded-md flex items-center justify-center"
+            >
+              {isMarkingOrderComplete ? (
+                <Loader className=" animate-spin size-4 text-white" />
+              ) : (
+                "Yes"
+              )}
+            </button>
+            <form method="dialog" className=" w-full h-7">
+              <button
+                className=" w-full h-7 text-sm bg-subMain rounded-md"
+                onClick={() => document.getElementById("mark").close()}
+              >
+                Cancel
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <form method="dialog" className="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+  );
+}
+
+export default MarkOrderCompleteModal;

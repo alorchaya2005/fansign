@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@font-face {
+  font-family: "Oddlini-Regular";
+  src: url("./fonts/oddlini-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oddlini-Medium";
+  src: url("./fonts/oddlini-medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oddlini-Bold";
+  src: url("./fonts/oddlini-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Phonk";
+  src: url("./fonts/Phonk_Regular.otf") format("opentype");
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+.title-font {
+  font-family: "Lilita One", sans-serif;
+}
+.profile-font {
+  font-family: "Bonheur Royale", cursive;
+}
