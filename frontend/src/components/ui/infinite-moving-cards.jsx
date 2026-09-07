@@ -88,7 +88,7 @@ export const InfiniteMovingCards = ({
               <div className=" flex items-center gap-2 rounded-full overflow-hidden w-max bg-main/50 pr-5 shadow-md">
                 <div className=" w-10 h-10">
                   <img
-                    src={item?.platform_avatar}
+                    src={`https://myvouch.es${item?.platform_avatar}`}
                     alt={item?.platform_username}
                     className=" w-full h-full object-cover"
                   />
