@@ -57,10 +57,10 @@ function About() {
               <div className="size-24 p-5 mt-12 rounded-full flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#252525] via-[#0f0f0f] to-main">
                 <img src="/images/logo.webp" alt="logo" />
               </div>
-              <div className=" mt-5 w-1/2">
+              <div className=" mt-5 w-2/3">
                 <p className=" font-oddliniRegular text-sm text-zinc-300 text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  delectus quisquam doloremque quo nemo voluptates laudantium
+                  uo nemo voluptates
                   veniam hic quibusdam, quia minus dolor voluptate, natus
                   voluptatum vero tenetur deleniti vitae ullam?
                 </p>
