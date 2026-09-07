@@ -7,17 +7,12 @@ function About() {
     "https://i.redd.it/4y3ssc3mlzh51.jpg",
     "https://cdn2.lemmecheck.com/lmccom/uploads/2013/04/pinkpanties.jpg",
     "https://64.media.tumblr.com/tumblr_lfctrwmRAw1qgoenyo1_250.jpg",
-    "https://pbs.twimg.com/media/DB6nomeXUAE82U8.jpg:small",
-    "https://pbs.twimg.com/media/Ep-0lfuW8AAploa.jpg:small",
-    "https://pbs.twimg.com/media/Fwh4WSjagAA2bqe.jpg:small",
+    
     "https://live.staticflickr.com/4118/4781396781_5a42bd08d2_z.jpg",
-    "https://pbs.twimg.com/profile_images/535196843970662402/pdHKDsOT_400x400.jpeg",
-    "https://pbs.twimg.com/profile_images/1829393948/head_400x400.jpg",
+    
     "https://i.dailymail.co.uk/i/pix/2014/11/29/2396B15200000578-2853986-image-52_1417264550473.jpg",
     "https://i.imgur.com/A8Pl3w0.png",
-    "https://pbs.twimg.com/media/ExkSWqaWYAkBoX4.jpg:small",
-    "https://pbs.twimg.com/media/FbgZwGZX0AErRSR.jpg:small",
-    "https://pbs.twimg.com/media/GxAe390bsAAPAo1?format=jpg&name=large",
+
   ];
   return (
     <div className=" py-20 w-full container px-5 mx-auto">
