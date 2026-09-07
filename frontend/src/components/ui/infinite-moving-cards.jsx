@@ -88,13 +88,13 @@ export const InfiniteMovingCards = ({
               <div className=" flex items-center gap-2 rounded-full overflow-hidden w-max bg-main/50 pr-5 shadow-md">
                 <div className=" w-10 h-10">
                   <img
-                    src={item?.discord_avatar}
-                    alt={item?.discord_name}
+                    src={item?.platform_avatar}
+                    alt={item?.platform_username}
                     className=" w-full h-full object-cover"
                   />
                 </div>
                 <span className="relative z-20 text-sm leading-[1.6] font-normal text-gray-100">
-                  {item.discord_name}
+                  {item.platform_username}
                 </span>
               </div>
               <div>
