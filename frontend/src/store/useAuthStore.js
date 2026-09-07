@@ -78,7 +78,7 @@ export const useAuthStore = create((set, get) => ({
   connectSocket: () => {
     const { authUser } = get();
     if (!authUser || get().socket?.connected) return;
-    const socket = io("https://fansign.onrender.com", {
+    const socket = io("https://fansign-46gd.onrender.com", {
       query: { userId: authUser._id },
     });
     socket.connect();
